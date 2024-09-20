@@ -14,7 +14,6 @@ def load_model():
 
 model = load_model()
 
-# Function to make predictions based on predict_proba and user-defined percentage
 def predict_top_percent(input_data, percent, car_model):
     # Convert the date columns to datetime
     input_data['Last_Service_Date'] = pd.to_datetime(input_data['Last_Service_Date'])
