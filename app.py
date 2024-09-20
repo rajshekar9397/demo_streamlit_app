@@ -27,7 +27,7 @@ def predict_top_percent(input_data, percent, car_model):
     customer_ids = input_data['Customer_ID']
     
     # Drop unnecessary columns for prediction
-    input_data = input_data.drop(columns=['Customer_ID', 'Purchase_Date', 'Last_Service_Date', 'Car_Model', 'Returned_for_Service'])  
+    input_data = input_data.drop(columns=['Customer_ID', 'Purchase_Date', 'Last_Service_Date', 'Car_Model'])  
     
     # Check if the data is empty after filtering
     if input_data.empty:
